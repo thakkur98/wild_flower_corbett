@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --hotel-gold: #c9a227;
+  --hotel-navy: #1a2a3a;
+  --hotel-cream: #f5f0e6;
+  --hotel-charcoal: #2c3e50;
+}
+
+body {
+  @apply bg-hotel-cream text-hotel-charcoal antialiased;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
