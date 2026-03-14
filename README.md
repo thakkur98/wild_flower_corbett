@@ -1,22 +1,26 @@
-# wild_flower_corbett — Dummy Website
+# Corbett Wild Flower Resort & Spa — Hotel Website
 
-A dummy hotel website built with **Next.js 14** (App Router), **TypeScript**, **Tailwind CSS**, and **Redux Toolkit**.
+Hotel website for **Corbett Wild Flower Resort and Spa**, Ramnagar, Uttarakhand. Built with **Next.js 14** (App Router), **TypeScript**, **Tailwind CSS**, and **Redux Toolkit**.
+
+**Repo:** [github.com/thakkur98/wild_flower_corbett](https://github.com/thakkur98/wild_flower_corbett)
 
 ## Features
 
-- **Home**: Hero, featured rooms, amenities, CTA
-- **Rooms**: List all rooms with cards; click through to room detail
-- **Room detail**: Images, description, amenities, date picker to add to booking cart
-- **Cart**: Review items, confirm booking (dummy — no real payment)
-- **My Bookings**: List of confirmed dummy bookings (from Redux)
-- **About** & **Contact**: Static content and a simple contact form (submit shows success message only)
+- **Home**: Hero banner, welcome section, beautiful views & nature cards, featured rooms, gallery, amenities, CTA
+- **Rooms**: Three categories — Jacuzzi Rooms, Pool View Rooms, Balcony with Garden View (with photos, prices in INR)
+- **Room detail**: Image carousel with prev/next and thumbnails, description, amenities, Send inquiry / Call to book
+- **Contact**: Inquiry form (mailto), Call button, location (Google Maps link), address
+- **About**: Resort info, hotel amenities list, our values
+- **How to book**: No payment online — inquiry or call; links to Contact and Rooms
+- **Gallery**: Hotel and resort photos
+- **Mobile**: Hamburger menu with full nav + Call + View on map
 
 ## Tech Stack
 
 - Next.js 14 (App Router)
 - TypeScript
 - Tailwind CSS
-- Redux Toolkit + React-Redux (rooms data, cart, bookings)
+- Redux Toolkit + React-Redux (rooms, cart)
 
 ## Getting Started
 
@@ -27,38 +31,34 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-### If the app doesn’t load on localhost
+## Deploy on Vercel
 
-1. **Free port 3000** if something else is using it:
+1. Push this repo to GitHub (as **thakkur98**):
    ```bash
-   # Find what’s on port 3000 (macOS)
-   lsof -ti:3000
-   # Stop it (use the PID from above, or)
-   kill $(lsof -ti:3000)
+   git push -u origin main
    ```
-2. **Start the dev server** and wait until you see **“Ready in …”**:
+   If the repo already has commits (e.g. only README), use:
    ```bash
-   npm run dev
+   git push -u origin main --force
    ```
-3. Open **http://localhost:3000** in your browser (after “Ready” appears).
-4. If you see **“EMFILE: too many open files”**, run this once then start again:
-   ```bash
-   ulimit -n 10240
-   npm run dev
-   ```
+
+2. Go to [vercel.com](https://vercel.com) → Sign in with GitHub.
+
+3. **Add New** → **Project** → Import **thakkur98/wild_flower_corbett**.
+
+4. Framework: **Next.js** (auto-detected). Root: **./** → **Deploy**.
+
+Vercel will build and deploy. Future pushes to `main` will auto-deploy.
 
 ## Scripts
 
 - `npm run dev` — development server
 - `npm run build` — production build
 - `npm run start` — run production build
-- `npm run lint` — run ESLint
+- `npm run lint` — ESLint
 
-## Redux State
+## Config
 
-- **rooms**: List of dummy rooms (from `roomsSlice`)
-- **cart**: Items added from room detail (check-in, check-out, guests, nights)
-- **bookings**: Confirmed bookings after “Confirm Booking” on cart (dummy only)
-
-All data is in-memory; no backend or database.
-
+- **Contact & location:** `src/lib/config.ts` (phone, email, address, mapUrl)
+- **Rooms data:** `src/lib/data/rooms.ts` (names, descriptions, prices INR, images, amenities)
+- **Currency:** INR (₹), formatted via `formatPrice()` from config
