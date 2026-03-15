@@ -3,8 +3,9 @@
  */
 export const HOTEL_CONTACT = {
   name: "Corbett Wild Flower",
-  phone: "+15551234567",
+  phone: "+91 9027668820",
   email: "hello@corbettwildflower.com",
+  instagram: "https://www.instagram.com/corbett_wild_flower_resort/?hl=en",
   address: "Neeripur, Chhoi, Ramnagar, Uttarakhand 244715, India",
   locationNote: "Near Jim Corbett National Park, Nainital district. About 8.5 km from Ramnagar railway station.",
   /** Google Maps place URL – opens in Maps app on mobile or browser */

@@ -64,7 +64,9 @@ export function Footer() {
                 <span className="text-hotel-gold text-sm">f</span>
               </a>
               <a
-                href="#"
+                href={HOTEL_CONTACT.instagram}
+                target="_blank"
+                rel="noreferrer"
                 className="w-10 h-10 rounded-full border border-hotel-gold/50 flex items-center justify-center hover:bg-hotel-gold/10 transition-colors"
                 aria-label="Instagram"
               >
