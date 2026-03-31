@@ -57,9 +57,9 @@ export const metadata: Metadata = {
     images: ["https://wildflowercorbett.com/home-view-1.png"],
     creator: "@corbett_wild_flower_resort",
   },
-  other: [
-    { name: "google-site-verification", content: "6EWEivVNtvRpEiMKdU5Emz-DLRxHSnWWRLvL-cxfcko" }
-  ],
+  other: {
+    "google-site-verification": "6EWEivVNtvRpEiMKdU5Emz-DLRxHSnWWRLvL-cxfcko"
+  },
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
