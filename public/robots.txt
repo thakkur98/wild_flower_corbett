@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wildflowercorbett.vercel.app/sitemap.xml

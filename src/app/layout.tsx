@@ -20,7 +20,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Corbett Wild Flower — Resort & Spa",
   description: "Corbett Wild Flower Resort and Spa — luxury and comfort in nature.",
-  metadataBase: new URL("https://wildflowercorbett.com"),
+  metadataBase: new URL("https://wildflowercorbett.vercel.app"),
   keywords: [
     "Corbett resort",
     "Corbett hotel",

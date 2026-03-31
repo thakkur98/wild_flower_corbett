@@ -4,6 +4,8 @@ Hotel website for **Corbett Wild Flower Resort and Spa**, Ramnagar, Uttarakhand.
 
 **Repo:** [github.com/thakkur98/wild_flower_corbett](https://github.com/thakkur98/wild_flower_corbett)
 
+**Live:** [https://wildflowercorbett.vercel.app](https://wildflowercorbett.vercel.app)
+
 ## Features
 
 - **Home**: Hero banner, welcome section, beautiful views & nature cards, featured rooms, gallery, amenities, CTA
