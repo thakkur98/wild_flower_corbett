@@ -20,6 +20,48 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Corbett Wild Flower — Resort & Spa",
   description: "Corbett Wild Flower Resort and Spa — luxury and comfort in nature.",
+  metadataBase: new URL("https://wildflowercorbett.com"),
+  keywords: [
+    "Corbett resort",
+    "Corbett hotel",
+    "Corbett Wild Flower",
+    "Ramnagar hotel",
+    "destination resort",
+    "spa retreat",
+    "eco resort",
+  ],
+  authors: [{ name: "Corbett Wild Flower", url: "https://wildflowercorbett.com" }],
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#1f2937",
+  openGraph: {
+    title: "Corbett Wild Flower — Resort & Spa",
+    description:
+      "Corbett Wild Flower Resort and Spa — luxury and comfort in nature.",
+    type: "website",
+    url: "https://wildflowercorbett.com",
+    siteName: "Corbett Wild Flower",
+    images: [
+      {
+        url: "https://wildflowercorbett.com/home-view-1.png",
+        width: 1200,
+        height: 630,
+        alt: "Corbett Wild Flower Resort & Spa",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Corbett Wild Flower — Resort & Spa",
+    description:
+      "Corbett Wild Flower Resort and Spa — luxury and comfort in nature.",
+    images: ["https://wildflowercorbett.com/home-view-1.png"],
+    creator: "@corbett_wild_flower_resort",
+  },
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
